@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="image/jpg" href="./rasmlar/Qirol.jpg">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Infinite Loop</div>
+        <div class="navbar">
+            <ul class="nav-links">
+                <li><a href="#bir" class="nav-link active" >Bosh sahifa</a></li>
+                <li><a href="#ikki" class="nav-link" >Qilgan ishlarimiz</a></li>
+                <li><a href="#uch" class="nav-link" >Biz haqimizda</a></li>
+                <li><a href="#tor" class="nav-link" >Rasmlar</a></li>
+                <li><a href="#besh" class="nav-link" >Aloqa</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Infinite Loop</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#bir" onclick="toggleMenu()">Bosh sahifa</a></li>
+                <li><a href="#ikki" onclick="toggleMenu()" >Qilgan ishlarimiz</a></li>
+                <li><a href="#uch"  onclick="toggleMenu()">Biz haqimizda</a></li>
+                <li><a href="#tor"  onclick="toggleMenu()">Rasmlar</a></li>
+                <li><a href="#besh" onclick="toggleMenu()">Aloqa</a></li>
+            </div>
+        </div>
+    </nav>
+    <!-- 1-chi section nomi Bosh sahifa -->
+    <section class="fon" id="bir">
+        <h1>Infinite Loop</h1>
+        <h6>Bootstrap 4.0 Parallax Theme</h6>
+        <h5>Free HTML Temlate by TOOPLATE</h5>
+    </section>
+    <!-- 2-chi section nomi  -->
+    <section class="oq" id="ikki">
+        <div class="lorem1">
+                <h1>Qilgan ishlarimiz</h1>
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Commodi neque accusamus 
+                reiciendis voluptatem assumenda beatae, 
+                autem quas asperiores sint sequi rem 
+                quaerat molestiae! Laboriosam asperiores 
+                eum sit repudiandae voluptatibus minima 
+                dolor sequi neque dignissimos et?
+        </div>
+        <div class="lorem2">
+            <div class="matn">
+                <i class="fa-solid fa-chart-column"></i>
+                <h1>Bozor tahlili</h1>
+                Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Nemo deleniti voluptatem 
+                at dolorum a omnis, voluptate excepturi 
+                ipsum hic provident.
+            </div>
+            <div class="matn">
+                <i class="fa-regular fa-message"></i>
+                <h1>Tezkor yordam</h1>
+                Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Nemo deleniti voluptatem 
+                at dolorum a omnis, voluptate excepturi 
+                ipsum hic provident.
+            </div>
+            <div class="matn">
+                <i class="fa-solid fa-fingerprint"></i>
+                <h1>Yuqori darajadagi xavfsizlik</h1>
+                Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Nemo deleniti voluptatem 
+                at dolorum a omnis, voluptate excepturi 
+                ipsum hic provident.
+                <button class="pastga"><a href="#uch">Batafsil</a></button>
+            </div>
+            <div class="matn">
+                <i class="fa-solid fa-users"></i>
+                <h1>Ijtimoiy ish</h1>
+                Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Nemo deleniti voluptatem 
+                at dolorum a omnis, voluptate excepturi 
+                ipsum hic provident.
+                <button class="pastga"><a href="#uch">Tafsilotlar</a></button>
+            </div>
+        </div>
+    </section>
+    <!-- 3-chi section nomi  -->
+    <section class="fon" id="uch">
+        <h2>Testimonials</h2>
+        <p class="qisqa-matn">Bizning mijozlarimiz fikrlari bilan tanishing.</p>
+        <!-- Yashirin radio tugmalar: qaysi biri tanlansa, CSS shunga qarab karuselni suradi -->
+        <input type="radio" name="karusel-tugma" id="tugma-1" class="yashirin-tugma" checked>
+        <input type="radio" name="karusel-tugma" id="tugma-2" class="yashirin-tugma">
+        <input type="radio" name="karusel-tugma" id="tugma-3" class="yashirin-tugma">
+        <!-- Ekranda faqat 3 ta karta ko'rinadigan oyna -->
+        <div class="karusel-oynasi">
+            <!-- 5 ta kartani yonma-yon ushlab turuvchi uzun qator -->
+            <div class="kartalar-qatori">
+                <!-- 1-karta -->
+                <div class="karta">
+                    <!-- O'zingizning rasmingizni src ichiga yozing -->
+                    <img src="./rasmlar/1 chisi.jpg" alt="">
+                    <p>Bu birinchi mijozning fikri. Juda ajoyib xizmat va qulay dizayn.</p>
+                    <h4>Catherine Win (Designer)</h4>
+                </div>
+                <!-- 2-karta -->
+                <div class="karta">
+                    <!-- O'zingizning rasmingizni src ichiga yozing -->
+                    <img src="./rasmlar/2 chisi.jpg" alt="">
+                    <p>Ikkinchi mijoz fikri. Sayt juda tez ishlaydi va hammasi tushunarli.</p>
+                    <h4>Dual Rocker (CEO)</h4>
+                </div>
+                <!-- 3-karta -->
+                <div class="karta">
+                    <!-- O'zingizning rasmingizni src ichiga yozing -->
+                    <img src="./rasmlar/3 chisi.jpg" alt="">
+                    <p>Uchinchi mijoz fikri. Jamoa o'z ishining haqiqiy ustalari ekan.</p>
+                    <h4>Sandar Soft (Marketing)</h4>
+                </div>
+                <!-- 4-karta -->
+                <div class="karta">
+                    <!-- O'zingizning rasmingizni src ichiga yozing -->
+                    <img src="./rasmlar/4 chisi.jpg" alt="">
+                    <p>To'rtinchi mijoz fikri. Kelajakda ham albatta birga ishlaymiz.</p>
+                    <h4>Oliva Htoo (Designer)</h4>
+                </div>
+                <!-- 5-karta -->
+                <div class="karta">
+                    <!-- O'zingizning rasmingizni src ichiga yozing -->
+                    <img src="./rasmlar/5 chisi.jpg" alt="">
+                    <p>Beshinchi mijoz fikri. Barcha talablarimiz o'z vaqtida bajarildi.</p>
+                    <h4>Jacob Joker (CTO)</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Pastdagi 3 ta ko'rinadigan dumaloq tugma (label orqali yuqoridagi inputlarni bosadi) -->
+        <div class="tugmalar-qatori">
+            <label for="tugma-1" class="tugma"></label>
+            <label for="tugma-2" class="tugma"></label>
+            <label for="tugma-3" class="tugma"></label>
+        </div>
+    </section>
+    <!-- 4-chi section nomi  -->
+    <section class="" id="tor">
+
+    </section>
+    <!-- 5-chi section nomi  -->
+    <section class="fon" id="besh">
+        <h1>Biz bilan bog'lanish</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fuga similique fugit rem repudiandae corrupti molestiae porro iste? Tempora, cum.</h2>
+        <div class="aloqa">
+            <div class="inputlar">
+                <input type="text" placeholder="Ismingiz">
+                <input type="email" placeholder="Electron pochtangiz">
+                <input type="text" class="Xabar" placeholder="Xabar">
+            </div>
+            <div class="ulanish">
+                <div class="i">
+                    <i class="fa-solid fa-comment"></i>
+                    <p>online chat</p>
+                </div>
+                <div class="i">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>Ismoil@gmail.com</p>
+                </div>
+                <div class="i">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Our location</p>
+                </div>
+                <div class="i">
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <p>+998(93)-845-42-37</p>
+                </div>
+            </div>
+        </div>
+        <button class="submit">Submit</button>
+    </section>
+    <button id="topBtn" title="Yuqoriga qaytish">⬆</button>
+    <script src="script.js"></script>
+</body>
+</html>

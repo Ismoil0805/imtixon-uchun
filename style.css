@@ -1,0 +1,463 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* * nav uchun codlar * */
+nav{
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+    z-index: 1000;
+}
+nav ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+    padding: 5px;
+    transition: 0.3s;
+    font-size: 22px;
+    font-weight: 600;
+}
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.3rem;
+}
+.logo{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.logo:hover{
+    cursor: default;
+}
+/* * nav pasga tushganda rangi o'zgaradi * */
+nav.active2{
+    background-color: rgba(0, 0, 255, 0.612);
+    color: white;
+}
+nav.active2 a{
+    color: white;
+}
+/* * navbar sectionlar orasidan otsa rangi o'zgaradi * */
+.nav-link{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.nav-link:hover{
+    background: white;
+    color: #222;
+    transition: 0.3s;
+}
+.nav-link.active{
+    background: white;
+    color: #222;
+}
+/* * tepaga olib chiqadigan knopka uchun * */
+#topBtn{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #222;
+    color: white;
+    font-size: 28px;
+    display: none;
+}
+#topBtn:hover{
+    background-color: #007bff;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+/* * media bo'lganda nav kichkina bo'ladi  * */
+#hamburger-nav{
+    display: none;
+}
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon{
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+}
+.menu-links{
+    display: block;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+.menu-links li{
+    list-style: none;
+}
+.menu-links.open{
+    max-height: 300px;
+}
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(8px, 4.5px);
+}
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(8px, -4.5px);
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:nth-child(2){
+    opacity: 1;
+}
+.hamburger-icon span:last-child{
+    transform: none;
+}
+/* * 1-chi section uchun codlar * */
+.fon{
+    background-image: url(https://cdn.shopify.com/s/files/1/0870/4655/3910/articles/photo-1477959858617-67f85cf4f1df.jpg?v=1778843125);
+    object-fit: cover;
+    position: sticky;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    height: 100vh;
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: context-menu;
+}
+#bir{
+    gap: 15px;
+    color: white;
+}
+h1{
+    font-size: 50px;
+}
+h6{
+    font-size: 18px;
+}
+h5{
+    font-size: 22px;
+}
+/* * 2-chi section uchun codlar * */
+#ikki{
+    display: flex;
+    gap: 30px;
+    cursor:context-menu;
+}
+/* *2-chi sectioni ichidagi 1-chi yozuvlar uchun * */
+.lorem1{
+    width: 1000px;
+    height: 260px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.lorem1 h1{
+   margin-left: -20px;
+   color: #007bff;
+}
+/* * 2-chi yozuvlar uchun * */
+.lorem2{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+.matn{
+    width: 500px;
+    height: 200px;
+    padding: 15px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.3s;
+}
+.matn:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 10px 20px rgba(13, 13, 93, 0.66);
+}
+.matn h1{
+    font-size: 25px;
+    color: #007bff;
+    cursor: pointer;
+}
+i{
+    font-size: 25px;
+    color: #007bff;
+}
+/* * 3-chi sectionga olib tushadigan btn codlari * */
+.pastga{
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.pastga:hover{
+    border: 1.5px solid blue;
+}
+/* * 3-chi section codlari * */
+.fon {
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+/* Bo'lim sarlavhasi */
+.fon h2 {
+  font-size: 66px;
+  margin-bottom: 10px;
+}
+/* Sarlavha ostidagi qisqa matn */
+.fon .qisqa-matn {
+  margin-bottom: 40px;
+  color: #dddddd;
+  font-size: 22px;
+}
+/* Radio inputlarni ekranda ko'rinmaydigan qilib yashirish */
+.fon .yashirin-tugma {
+  display: none;
+}
+/* Karusel oynasi: eni 900px (300px * 3 karta), ortiqcha qismini yashiradi */
+.fon .karusel-oynasi {
+  width: 1050px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* 5 ta kartani yonma-yon tizadigan lenta va silliq surilish animatsiyasi */
+.fon .kartalar-qatori {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+/* Har bir kichik karta (div): eni 300px, qisqarib ketmaydi */
+.fon .karta {
+  width: 350px;
+  flex-shrink: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+/* Karta ichidagi dumaloq rasm */
+.fon .karta img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover; /* Rasm buzilib cho'zilmasligi uchun */
+  margin-bottom: 15px;
+}
+/* Mijoz fikri matni */
+.fon .karta p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-align: left;
+}
+/* Mijoz ismi va lavozimi */
+.fon .karta h4 {
+  font-style: italic;
+  font-weight: normal;
+  text-align: right;
+  font-size: 17px;
+}
+/* --- CSS ORQALI SURISH QISMi --- */
+
+/* 1-tugma bosilganda: 0px suriladi (1, 2, 3-kartalar ko'rinadi) */
+.fon #tugma-1:checked ~ .karusel-oynasi .kartalar-qatori {
+  transform: translateX(0px);
+}
+
+/* 2-tugma bosilganda: -300px suriladi (1-karta chapda yashirinadi, 4-karta o'ngdan ko'rinadi) */
+.fon #tugma-2:checked ~ .karusel-oynasi .kartalar-qatori {
+  transform: translateX(-300px);
+}
+
+/* 3-tugma bosilganda: -600px suriladi (1 va 2-kartalar chapda yashirinadi, 3, 4, 5-kartalar ko'rinadi) */
+.fon #tugma-3:checked ~ .karusel-oynasi .kartalar-qatori {
+  transform: translateX(-600px);
+}
+
+/* Pastki 3 ta tugma turadigan blok */
+.fon .tugmalar-qatori {
+  margin-top: 30px;
+}
+/* Har bir dumaloq tugma (label) */
+.fon .tugmalar-qatori .tugma {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.fon .tugmalar-qatori .tugma:hover{
+    background-color: #ffffff;
+}
+/* Qaysi radio tanlangan bo'lsa, o'sha tugmani oq rangda ko'rsatish */
+.fon #tugma-1:checked ~ .tugmalar-qatori label[for="tugma-1"],
+.fon #tugma-2:checked ~ .tugmalar-qatori label[for="tugma-2"],
+.fon #tugma-3:checked ~ .tugmalar-qatori label[for="tugma-3"]{
+  background-color: #ffffff;
+}
+/* * 5-chi section uchun codlar * */
+h2{
+    width: 1000px;
+}
+.aloqa{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.inputlar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input{
+    height: 40px;
+    width: 400px;
+    border: 2px solid black;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.Xabar{
+    height: 100px;
+    width: 400px;
+}
+.ulanish{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.i{
+    display: flex;
+    font-size: 30px;
+    gap: 10px;
+}
+p{
+    color: #fff;
+}
+.i i{
+    font-size: 30px;
+    color: #fff;
+}
+.submit{
+    margin-top: 50px;
+    width: 250px;
+    height: 45px;
+    font-size: 35px;
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    background: transparent;
+}
+.submit:hover{
+    background: linear-gradient(160deg, #007bff, white);
+    border: 2px solid;
+}
+
+/* * Telefon uchun * */
+@media (max-width: 480px){
+    /* * nav activ codlar  * */
+nav.active2 a{
+    color: black;
+}
+/* * nav hamburger bo'lganda ishlatiladigan codlar * */
+.hamburger-icon span{
+    background-color: black;
+}
+#hamburger-nav{
+    display: flex; 
+    transition: 0.3s;
+}
+#desktop-nav{
+    display: none;
+}
+/* * umumiy sectionlar uchun codlar * */
+section{
+    width: auto;
+    height: auto;
+    cursor: context-menu;
+}
+/* * 1-chi section uchun codlar * */
+#bir{
+    gap: 5px;
+    color: black;
+    height: 100vh;
+}
+h1{
+    font-size: 40px;
+}
+h6{
+    font-size: 15px;
+}
+h5{
+    font-size: 16px;
+}
+/* * 2-chi section uchun codlar * */
+#ikki{
+    padding: 10px 35px;
+}
+.lorem1{
+    width: auto;
+}
+.lorem2{
+    width: 300px;
+}
+}
