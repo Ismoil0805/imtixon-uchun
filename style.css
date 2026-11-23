@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    
 }
 
 body{
@@ -286,7 +285,6 @@ i{
 /* Har bir kichik karta (div): eni 300px, qisqarib ketmaydi */
 .fon .karta {
   width: 350px;
-  flex-shrink: 0;
   padding: 20px;
   box-sizing: border-box;
 }
